@@ -1,0 +1,10 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width:1200px) {
+    .grid {
+        flex-direction: row;
+    }
+}

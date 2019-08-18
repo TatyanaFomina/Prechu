@@ -1,0 +1,151 @@
+.section-foreground {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-overlay {
+  background: white;
+  height: 70px;
+}
+
+.section-header-bottom-mobile {
+  margin: 0 10px;
+}
+
+.section-header-bottom-right .section-description::first-line {
+  font-size: 31px;
+}
+
+.section-header-bottom-right .section-description {
+  font-size: 23px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.section-top .section-image {
+  width: 50%;
+}
+
+.section-header-bottom-left {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.section-top {
+  background-image: url(../../images/background.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.triangle-border {
+  background-image: url(../../images/triangle.png);
+  background-repeat: repeat;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 8px;
+}
+
+.section-main-content-bottom {
+  margin: 20px 0;
+}
+
+.section-main-content-bottom .section-title,
+.section-main-content-bottom .section-subtitle {
+  color: #6f7173;
+  text-align: center;
+}
+.section-main-content-bottom .section-image {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  display: none;
+}
+
+@media(min-width:640px) {
+ 
+  .section-header-bottom-mobile {
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .section-header-bottom-left {
+    flex-basis: 45%;
+  }
+
+  .section-header-bottom-right {
+    flex-basis: 55%;
+  }
+
+  .section-top .section-image {
+    width: 55%;
+  }
+  .section-header-bottom-mobile .section-description {
+    text-align: left;
+  }
+
+  .section-main-content-bottom .section-subtitle {
+    text-align: left;
+  }  
+
+  .section-main-content-bottom .section-image {
+    width: 40%;
+  }
+}
+
+@media(min-width:1200px) {
+
+  .section-header-bottom {
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .section-header-bottom-right .section-description::first-line {
+    font-size: 42px;
+  }
+
+  .section-header-bottom-right .section-description {
+    font-size: 26px;
+    line-height: 44.42px;
+    text-align: left;
+  }
+
+  .swiper-slide {
+    display: flex;
+  }
+
+  .swiper-container {
+    width: 940px;
+  }
+  .section-header-bottom-mobile {
+    display: none;
+  }
+
+  .triangle-border {
+    display: block;
+    
+  }
+  .section-content {
+    display: flex;
+    margin: 0 -20px;
+  }
+
+  .section-image {
+    flex-basis: 40%;
+    padding: 0 20px;
+  }
+  .article {
+    flex-basis: 60%;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .section-main-content-bottom .section-title {
+    text-align: left;
+  }
+}
